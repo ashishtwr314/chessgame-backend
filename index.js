@@ -5,6 +5,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 
+const port = process.env.PORT || 3001;
 app.use(cors());
 const server = http.createServer(app);
 
@@ -45,6 +46,6 @@ app.get("/api", (req, res) => {
   });
 });
 
-server.listen(3001, () => {
-  console.log("listening on port 3000");
+server.listen(port, () => {
+  console.log("listening on port " + port);
 });
