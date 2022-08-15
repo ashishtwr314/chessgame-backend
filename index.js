@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://capable-blancmange-a47a5a.netlify.app",
+    origin: "https://ash-chess-game.netlify.app",
     methods: ["GET", "POST"],
   },
 });
